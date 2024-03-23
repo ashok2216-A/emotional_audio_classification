@@ -17,9 +17,16 @@ st.write('You selected:', emotion)
 if emotion == 'Angry':
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\OneDrive\Desktop\app\recorded_audio.wav', 
-    r'C:\Users\ashok\OneDrve\Desktop\app\raw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\raw_audio_data\Angry\OAFcalm_angry.wav'))
+    ('raw_audio_data/Angry/OAF_boat_angry.wav', 
+    'raw_audio_data/Angry/OAF_boat_angry.wav', 
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav',
+    'raw_audio_data/Angry/OAF_boat_angry.wav'))
 elif emotion == 'Disgust':
     file_path = st.selectbox(
     'Select a Audio file',
