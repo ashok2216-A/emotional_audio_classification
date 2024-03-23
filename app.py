@@ -27,44 +27,73 @@ if emotion == 'Angry':
     tuple(file_list))
 
 elif emotion == 'Disgust':
+    
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\OneDrive\Desktp\app\raw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\aw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\raw_audio_data\Angy\OAF_calm_angry.wav'))
+    tuple(file_list))
+    
 elif emotion == 'Fear':
+    
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\OneDrive\Desktop\app\raw_audgry\OAF_calm_angry.wav', 
-    r'C:\Users\shok\OneDrive\Desktop\app\raw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Usersashok\OneDrive\Desktop\app\raw_audio_data\Angry\OAF_calm_angry.wav'))
+    tuple(file_list))
+    
 elif emotion == 'Happy':
+    
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\Oneraw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\asrive\Desktop\app\raw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\raw_aAF_calm_angry.wav'))
+    tuple(file_list))
+    
 elif emotion == 'Neutral':
+    
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\OneDrive\Deaudio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\raw_audio_data\Angryngry.wav', 
-    r'C:\Users\ashok\Ontop\app\raw_audio_data\Angry\OAF_calm_angry.wav'))
+    tuple(file_list))
+    
 elif emotion == 'Pleasant_Suprise':
+    
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\OneDrive\Desktop\app\raw_audio_data\Angrylm_angry.wav', 
-    r'C:\Users\ashok\OneDesktop\app\raw_audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\raw_audio_data\A_calm_angry.wav'))
+    tuple(file_list))
+    
 elif emotion == 'Sad':
+
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    (r'C:\Users\ashok\OneDrive\Desktop\app\raw_audiAngry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\audio_data\Angry\OAF_calm_angry.wav', 
-    r'C:\Users\ashok\OneDrive\Desktop\app\udio_data\Angry\OAF_calm_angry.wav'))
+    tuple(file_list))
+
 else:
     st.subheader('File not found')
-
 
 audio_signals(file_path)
 
