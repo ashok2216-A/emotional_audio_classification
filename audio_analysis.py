@@ -49,6 +49,6 @@ def spectrogram(file_path):
 
 def audio_signals(file_path):
     aw = audio_waveframe(file_path)
-    # spg = spectrogram(file_path)
+    spg = spectrogram(file_path)
 
-    return aw
+    return aw, spg
