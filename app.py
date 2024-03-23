@@ -31,7 +31,7 @@ elif emotion == 'Disgust':
     
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
@@ -42,7 +42,7 @@ elif emotion == 'Fear':
     
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
@@ -53,7 +53,7 @@ elif emotion == 'Happy':
     
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
@@ -64,7 +64,7 @@ elif emotion == 'Neutral':
     
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
@@ -75,7 +75,7 @@ elif emotion == 'Pleasant_Suprise':
     
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
@@ -86,7 +86,7 @@ elif emotion == 'Sad':
 
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
