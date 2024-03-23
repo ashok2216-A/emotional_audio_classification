@@ -10,7 +10,7 @@ from audio_processing import extract_features
 emotion = st.selectbox(
     'Select a Emotion',
     ('Angry', 'Disgust', 'Fear',
-       'Happy', 'Neutral', 'Pleasant_Suprise','Sad'))
+       'Happy', 'Neutral', 'Pleasant_Suprised','Sad'))
 
 st.write('You selected:', emotion)
 
