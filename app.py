@@ -20,7 +20,7 @@ if emotion == 'Angry':
 
     file_list = []
     for dir_list in dirs:
-    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
     	file_list.append(files)
         
     file_path = st.selectbox(
