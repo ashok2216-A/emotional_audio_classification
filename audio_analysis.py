@@ -35,7 +35,7 @@ def spectrogram(file_path):
     # Convert the magnitude spectrogram to decibels (log scale)
     spectrogram = librosa.amplitude_to_db(np.abs(stft))
     # Plot the spectrogram
-    plt.figure(figsize=(30, 6))
+    plt.figure(figsize=(30, 10))
     librosa.display.specshow(spectrogram, sr=sampling_rate, hop_length=hop_length, x_axis='time', y_axis='linear')
     plt.colorbar(format='%+2.0f dB')
     plt.title('Spectrogram')
