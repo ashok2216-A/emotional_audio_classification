@@ -123,7 +123,7 @@ networkx==3.2.1
 newsapi-python==0.2.7
 ninja==1.11.1.1
 nltk==3.8.1
-notebook==7.0.6
+notebook==7.0.7
 notebook-as-pdf==0.5.0
 notebook_shim==0.2.3
 numba==0.59.1
