@@ -13,20 +13,19 @@ emotion = st.selectbox(
 
 st.write('You selected:', emotion)
 
+dirs = os.listdir(f'C:/Users/ashok/OneDrive/Desktop/app/raw_audio_data/{emotion}')
 
 if emotion == 'Angry':
+
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+input_name+'/'+dir_list)
+    	file_list.append(files)
+        
     file_path = st.selectbox(
     'Select a Audio file',
-    ('raw_audio_data/Angry/OAF_boat_angry.wav', 
-    'raw_audio_data/Angry/OAF_cab_angry.wav', 
-    'raw_audio_data/Angry/OAF_home_angry.wav',
-    'raw_audio_data/Angry/OAF_learn_angry.wav',
-    'raw_audio_data/Angry/OAF_match_angry.wav',
-    'raw_audio_data/Angry/OAF_mouse_angry.wav',
-    'raw_audio_data/Angry/OAF_pole_angry.wav',
-    'raw_audio_data/Angry/OAF_white_angry.wav',
-    'raw_audio_data/Angry/OAF_pearl_angry.wav',
-    'raw_audio_data/Angry/OAF_youth_angry.wav'))
+    tuple(file_list))
+
 elif emotion == 'Disgust':
     file_path = st.selectbox(
     'Select a Audio file',
