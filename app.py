@@ -14,7 +14,7 @@ emotion = st.selectbox(
 
 st.write('You selected:', emotion)
 
-dirs = os.listdir(f'C:/Users/ashok/OneDrive/Desktop/app/raw_audio_data/{emotion}')
+dirs = os.listdir(f'raw_audio_data/{emotion}')
 
 if emotion == 'Angry':
 
