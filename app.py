@@ -72,7 +72,7 @@ audio_signals(file_path)
 audio_data, sampling_rate = librosa.load(file_path)
 st.audio(audio_data, sample_rate=sampling_rate)
 
-model_path = r'C:\Users\ashok\OneDrive\Desktop\app\audio_classifier_model.joblib'
+model_path = 'audio_classifier_model.joblib'
 model = load(model_path)
 
 audio = file_path
