@@ -9,7 +9,8 @@ from audio_processing import extract_features
 # Decorator for caching function results
 @st.cache
 def load_model(model_path):
-    return load(model_path)
+    model = load(model_path)
+    return model
 
 @st.cache
 def predict_emotion(audio_path, model):
