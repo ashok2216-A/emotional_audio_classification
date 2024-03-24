@@ -116,4 +116,4 @@ labels = {}
 for label, prediction in zip(encoded_label, labels_list):
     labels[label] = prediction
 if y_predict[0] in labels.keys():
-    st.write('Predicted Class:', labels[y_predict[0]])
+    st.subheader('Predicted Class:', labels[y_predict[0]])
