@@ -38,7 +38,8 @@ def spectrogram(file_path):
     spectrogram = librosa.amplitude_to_db(np.abs(stft))
     # Plot the spectrogram
     plt.figure(figsize=(30, 10))
-    librosa.display.specshow(spectrogram, sr=sampling_rate, hop_length=hop_length, x_axis='time', y_axis='linear')
+    # librosa.display.specshow(spectrogram, sr=sampling_rate, hop_length=hop_length, x_axis='time', y_axis='linear')
+    librosa.display.specshow(spectrogram, sr=sampling_rate, hop_length=hop_length)
     plt.colorbar(format='%+2.0f dB')
     plt.title('Spectrogram')
     plt.xlabel('Time (s)')
