@@ -98,11 +98,11 @@ else:
 
 
 # Decorator for caching function results
-@st.cache
+@st.cache_data
 def load_model(model_path):
     return load(model_path)
 
-@st.cache
+@st.cache_data
 def predict_emotion(audio_path, model):
     extracted_features = extract_features(audio_path).reshape(1, -1)
     return model.predict(extracted_features)
