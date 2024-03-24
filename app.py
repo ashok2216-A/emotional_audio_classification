@@ -7,6 +7,8 @@ from audio_analysis import audio_signals
 from audio_processing import extract_features
 # from audio_record import record_audio
 
+st.header('Emotional Audio Classification', divider='rainbow')
+
 emotion = st.selectbox(
     'Select a Emotion',
     ('Angry', 'Disgust', 'Fear',
