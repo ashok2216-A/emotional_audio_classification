@@ -6,6 +6,7 @@ from joblib import dump, load
 from audio_analysis import audio_signals
 from audio_processing import extract_features
 
+st.header('Emotional Audio Classification', divider='rainbow')
 
 emotion = st.selectbox(
     'Select a Emotion',
@@ -96,6 +97,7 @@ elif emotion == 'Sad':
 else:
     st.subheader('File not found')
 
+audio_signals(file_path)
 
 # Decorator for caching function results
 @st.cache_data
@@ -107,9 +109,6 @@ def predict_emotion(audio_path, _model):
     extracted_features = extract_features(audio_path).reshape(1, -1)
     return _model.predict(extracted_features)
 
-st.header('Emotional Audio Classification', divider='rainbow')
-
-# Your code continues as before...
 
 # Load the model
 model_path = 'audio_classifier_model.joblib'
