@@ -8,7 +8,7 @@ from IPython.display import Audio
 import librosa
 import streamlit as st
 
-@st.cache_data
+
 def audio_waveframe(file_path):
     # Load the audio file
     audio_data, sampling_rate = librosa.load(file_path)
@@ -27,7 +27,7 @@ def audio_waveframe(file_path):
 
     return plot
 
-@st.cache_data
+
 def spectrogram(file_path):
     # Compute the short-time Fourier transform (STFT)
     n_fft = 500  # Number of FFT points 2048
@@ -49,7 +49,7 @@ def spectrogram(file_path):
 
     return plot
 
-@st.cache_data
+
 def audio_signals(file_path):
     aw = audio_waveframe(file_path)
     spg = spectrogram(file_path)
