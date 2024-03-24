@@ -7,94 +7,94 @@ from audio_analysis import audio_signals
 from audio_processing import extract_features
 
 
-# emotion = st.selectbox(
-#     'Select a Emotion',
-#     ('Angry', 'Disgust', 'Fear',
-#        'Happy', 'Neutral', 'Pleasant_Suprised','Sad'))
+emotion = st.selectbox(
+    'Select a Emotion',
+    ('Angry', 'Disgust', 'Fear',
+       'Happy', 'Neutral', 'Pleasant_Suprised','Sad'))
 
-# st.write('You selected:', emotion)
+st.write('You selected:', emotion)
 
-# dirs = os.listdir(f'raw_audio_data/{emotion}')
+dirs = os.listdir(f'raw_audio_data/{emotion}')
 
-# if emotion == 'Angry':
+if emotion == 'Angry':
 
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
 
-# elif emotion == 'Disgust':
+elif emotion == 'Disgust':
     
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
     
-# elif emotion == 'Fear':
+elif emotion == 'Fear':
     
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
     
-# elif emotion == 'Happy':
+elif emotion == 'Happy':
     
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
     
-# elif emotion == 'Neutral':
+elif emotion == 'Neutral':
     
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
     
-# elif emotion == 'Pleasant_Suprised':
+elif emotion == 'Pleasant_Suprised':
     
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
     
-# elif emotion == 'Sad':
+elif emotion == 'Sad':
 
-#     file_list = []
-#     for dir_list in dirs:
-#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
-#     	file_list.append(files)
+    file_list = []
+    for dir_list in dirs:
+    	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+    	file_list.append(files)
         
-#     file_path = st.selectbox(
-#     'Select a Audio file',
-#     tuple(file_list))
+    file_path = st.selectbox(
+    'Select a Audio file',
+    tuple(file_list))
 
-# else:
-#     st.subheader('File not found')
+else:
+    st.subheader('File not found')
 
 
 # Decorator for caching function results
