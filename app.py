@@ -6,6 +6,97 @@ from joblib import dump, load
 from audio_analysis import audio_signals
 from audio_processing import extract_features
 
+
+# emotion = st.selectbox(
+#     'Select a Emotion',
+#     ('Angry', 'Disgust', 'Fear',
+#        'Happy', 'Neutral', 'Pleasant_Suprised','Sad'))
+
+# st.write('You selected:', emotion)
+
+# dirs = os.listdir(f'raw_audio_data/{emotion}')
+
+# if emotion == 'Angry':
+
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+
+# elif emotion == 'Disgust':
+    
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+    
+# elif emotion == 'Fear':
+    
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+    
+# elif emotion == 'Happy':
+    
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+    
+# elif emotion == 'Neutral':
+    
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+    
+# elif emotion == 'Pleasant_Suprised':
+    
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+    
+# elif emotion == 'Sad':
+
+#     file_list = []
+#     for dir_list in dirs:
+#     	files = ('raw_audio_data/'+emotion+'/'+dir_list)
+#     	file_list.append(files)
+        
+#     file_path = st.selectbox(
+#     'Select a Audio file',
+#     tuple(file_list))
+
+# else:
+#     st.subheader('File not found')
+
+
 # Decorator for caching function results
 @st.cache
 def load_model(model_path):
