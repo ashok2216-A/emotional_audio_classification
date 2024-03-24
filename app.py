@@ -116,4 +116,4 @@ labels = {}
 for label, prediction in zip(encoded_label, labels_list):
     labels[label] = prediction
 if y_predict[0] in labels.keys():
-    st.markdown('Predicted Class:', :rainbow[labels[y_predict[0]]])
+    st.markdown(f'Predicted Class: :rainbow[{labels[y_predict[0]]}]')
