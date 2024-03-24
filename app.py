@@ -73,7 +73,7 @@ elif emotion == 'Neutral':
     'Select a Audio file',
     tuple(file_list))
     
-elif emotion == 'Pleasant_Suprise':
+elif emotion == 'Pleasant_Suprised':
     
     file_list = []
     for dir_list in dirs:
