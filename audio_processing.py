@@ -9,7 +9,6 @@ import pandas as pd
 
 
 # Function to extract features from audio file
-@st.cache_data
 def extract_features(file_path):
     # Load audio file
     audio, sample_rate = librosa.load(file_path)
@@ -21,7 +20,6 @@ def extract_features(file_path):
     return flattened_features
 
 # Function to load dataset and extract features
-@st.cache_data
 def load_data_and_extract_features(data_dir):
     labels = []
     features = []
