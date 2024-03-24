@@ -103,9 +103,9 @@ def load_model(model_path):
     return load(model_path)
 
 @st.cache_data
-def predict_emotion(audio_path, model):
+def predict_emotion(audio_path, _model):
     extracted_features = extract_features(audio_path).reshape(1, -1)
-    return model.predict(extracted_features)
+    return _model.predict(extracted_features)
 
 st.header('Emotional Audio Classification', divider='rainbow')
 
