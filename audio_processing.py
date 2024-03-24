@@ -9,6 +9,7 @@ import pandas as pd
 
 
 # Function to extract features from audio file
+@st.cache_data
 def extract_features(file_path):
     # Load audio file
     audio, sample_rate = librosa.load(file_path)
@@ -16,9 +17,11 @@ def extract_features(file_path):
     mfccs = librosa.feature.mfcc(y=audio, sr=sample_rate, n_mfcc=40)
     # Flatten the features into a 1D array
     flattened_features = np.mean(mfccs.T, axis=0)
+    
     return flattened_features
 
 # Function to load dataset and extract features
+@st.cache_data
 def load_data_and_extract_features(data_dir):
     labels = []
     features = []
@@ -32,4 +35,5 @@ def load_data_and_extract_features(data_dir):
             # Extract features from audio file
             feature = extract_features(file_path)
             features.append(feature)
+            
     return np.array(features), np.array(labels)
