@@ -98,14 +98,25 @@ else:
 
 audio_signals(file_path)
 
-audio_data, sampling_rate = librosa.load(file_path)
-st.audio(audio_data, sample_rate=sampling_rate)
+@st.cache_data
+def load_audio():
+    audio_data, sampling_rate = librosa.load(file_path)
+    audio_data = st.audio(audio_data, sample_rate=sampling_rate)
+    return audio_data
+    
+load_audio()
 
-model_path = 'audio_classifier_model.joblib'
-model = load(model_path)
+@st.cache_data
+def load_model():
+    model_path = 'audio_classifier_model.joblib'
+    model = load(model_path)
+    return model
+
+load_model()
 
 audio = file_path
 print(audio)
+
 extracted_features = extract_features(audio).reshape(1, -1)
 # extracted_features = x_test[112].reshape(1, -1)
 y_predict = model.predict(extracted_features)
